@@ -1,0 +1,68 @@
+@import '../../../global/variables.scss';
+
+.MyButton {
+  font-size: 1.01rem;
+  color: $colorBlack;
+  font-weight: 500;
+
+  &.Default {
+    width: 100%;
+    color: $colorWhite;
+    padding: 0.4rem 1.6rem;
+    border-radius: 0.4rem;
+    background-image: linear-gradient(to right, $colorPrimary, $colorSecondary, $colorPrimary, $colorPrimary, $colorSecondary);
+    background-size: 400%;
+    background-position: 0% center;
+    box-shadow: 2px 4px 20px rgba($colorBlack, 0.1);
+    border: 1px solid $colorWhite;
+    animation: none;
+    transition: 0.4s ease;
+    transition-property: border-color, background-color, color;
+    cursor: pointer;
+
+    &:hover {
+      animation: bgmove 5s ease-out forwards infinite;
+
+      @keyframes bgmove {
+        0% {
+          background-position: 0% center;
+        }
+        50% {
+          background-position: 100% center;
+        }
+        100% {
+          background-position: 0% center;
+        }
+      }
+    }
+    &.Outline {
+      color: $colorPrimary;
+      background: none;
+      border-color: $colorPrimary;
+    }
+  }
+  &.Round {
+    color: $colorPrimary;
+    padding: 1rem 2.6rem;
+    border-radius: 10rem;
+    background-color: $colorWhite;
+    border: 1px solid $colorWhite;
+    transition: 0.4s ease;
+    transition-property: color, background-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      color: $colorWhite;
+    }
+    &.Outline {
+      color: $colorWhite;
+      background-color: transparent;
+
+      &:hover {
+        color: $colorPrimary;
+        background-color: $colorWhite;
+      }
+    }
+  }
+}

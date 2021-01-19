@@ -1,0 +1,44 @@
+@import '../../global/variables.scss';
+
+.Header {
+  padding: 3rem 0;
+  color: $colorWhite;
+
+  .Container {
+    display: flex;
+    // align-items: center;
+
+    .LogoContainer {
+      padding-right: 1rem;
+
+      .Logo {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $colorSecondary;
+      }
+    }
+    .Navbar {
+      flex: 1;
+
+      .List {
+        padding: 0 1rem;
+
+        .Item {
+          display: inline-block;
+          padding: 0.6rem 2%;
+          font-size: 1.05rem;
+          letter-spacing: 0.6px;
+          font-weight: 500;
+        }
+      }
+    }
+    .Buttons {
+
+      .CartBtn {
+        // font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

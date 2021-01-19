@@ -1,0 +1,38 @@
+@import './global/variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: $colorPrimary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+span {
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+}
+
+.container {
+  width: 85vw;
+  max-width: 1440px;
+  margin: 0 auto;
+}

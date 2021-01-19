@@ -1,0 +1,23 @@
+{
+  "title": "Products Data",
+  "products": [
+    {
+      "id": "001",
+      "name": "Macbook Pro",
+      "src": "../assets/products/mac.png",
+      "price": 240.00
+    },
+    {
+      "id": "001",
+      "name": "Alarm Clock",
+      "src": "../assets/products/clock.png",
+      "price": 12.06
+    },
+    {
+      "id": "001",
+      "name": "iPhone 12 Max",
+      "src": "../assets/products/iphone.png",
+      "price": 49.99
+    }
+  ]
+}

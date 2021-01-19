@@ -1,0 +1,32 @@
+@import '../../global/variables.scss';
+
+.Banner {
+  padding: 2rem 0;
+  color: $colorWhite;
+
+  .Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .TextContainer {
+      flex: 0 0 calc(55% - 1rem);
+
+      .Title {
+        font-size: 3rem;
+      }
+      .Details {
+        font-size: 0.95rem;
+        padding: 2.5rem 0;
+        line-height: 1.8;
+      }
+    }
+    .ImageContainer {
+      flex: 0 0 calc(45% - 1rem);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
